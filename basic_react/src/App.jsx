@@ -1,7 +1,9 @@
+import Counter from "./Counter";
+
 function App() {
   return (
     <>
-      <h1>HI anKit!!</h1>
+      <Counter />
     </>
   );
 }
