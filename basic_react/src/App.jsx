@@ -1,6 +1,7 @@
 import BgChanger from "./components/BgChanger";
 import Card from "./components/Card";
 import Counter from "./components/Counter";
+import PasswordGenerator from "./components/PasswordGenerator";
 import ToggleButton from "./components/ToggleButton";
 function App() {
   const info = {
@@ -11,7 +12,7 @@ function App() {
   };
   return (
     <>
-      <ToggleButton />
+      <PasswordGenerator />
     </>
   );
 }
