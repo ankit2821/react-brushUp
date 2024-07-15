@@ -1,6 +1,7 @@
 import BgChanger from "./components/BgChanger";
 import Card from "./components/Card";
 import Counter from "./components/Counter";
+import ToggleButton from "./components/ToggleButton";
 function App() {
   const info = {
     name: "Fido",
@@ -10,7 +11,7 @@ function App() {
   };
   return (
     <>
-      <BgChanger />
+      <ToggleButton />
     </>
   );
 }
