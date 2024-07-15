@@ -3,6 +3,5 @@
 @tailwind utilities;
 
 * {
-  background-color: rgb(39, 39, 39);
-  margin: auto;
+  /* background-color: rgb(39, 39, 39); */
 }
