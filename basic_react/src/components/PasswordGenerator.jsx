@@ -34,10 +34,13 @@ function PasswordGenerator() {
     <>
       <div className="bg-black h-screen w-screen flex items-center justify-center">
         <div className=" bg-slate-500 w-fit h-fit gap-3 align-middle items-center justify-center rounded">
-          <div className=" flex w-full items-center m-2 rounded ">
+          <h1 className="text-black font-semibold text-center my-2 text-2xl">
+            Password generator
+          </h1>
+          <div className=" flex max-w-fit items-center m-2 rounded">
             <input
               type="text"
-              className="outline-none w-96 max-w-md p-1"
+              className="outline-none rounded-l-md m-auto ite w-96 max-w-md p-1"
               defaultValue={password}
               readOnly
               placeholder="password"
@@ -46,13 +49,13 @@ function PasswordGenerator() {
 
             <button
               onClick={handleCopy}
-              className="button  h-fit rounded-md p-1 bg-blue-500 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="button  h-fit rounded-r-md  p-1 bg-blue-500 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             >
               {copy ? "Copied" : "Copy"}
             </button>
           </div>
 
-          <div className="flex gap-x-4 p-2">
+          <div className="flex gap-2 p-2 ">
             <input
               type="range"
               min="8"
@@ -74,7 +77,7 @@ function PasswordGenerator() {
               defaultChecked={characterInclude}
               onChange={() => setcharacterInclude((prev) => !prev)}
             />
-            <label>Special Characters</label>
+            <label>Characters</label>
           </div>
         </div>
       </div>
